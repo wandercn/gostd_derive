@@ -1,0 +1,24 @@
+[package]
+name = "gostd_dervie"
+license = "MIT"
+version = "0.0.1"
+edition = "2018"
+authors = ["wandercn<wander@ffactory.org>"]
+description = "proc_macro_derive  library for gostd."
+homepage = "https://github.com/wandercn/gostd_dervie"
+repository = "https://github.com/wandercn/gostd_dervie"
+keywords = ["gobind","go-api","gostd","go-to-rust","go-standard-library"]
+categories= ["api-bindings","accessibility","development-tools","compilers"]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "1.0"
+quote = "1.0"
