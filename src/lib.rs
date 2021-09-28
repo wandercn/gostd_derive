@@ -18,7 +18,7 @@ use syn;
 ///
 /// # example:
 ///```no_run
-///use gostd_dervie::Fmt;
+///use gostd_derive::Fmt;
 ///
 ///#[derive(Fmt)]
 ///struct Foo{

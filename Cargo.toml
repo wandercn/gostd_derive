@@ -1,7 +1,7 @@
 [package]
 name = "gostd_derive"
 license = "MIT"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2018"
 authors = ["wandercn<wander@ffactory.org>"]
 description = "proc_macro_derive library for gostd."
