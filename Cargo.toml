@@ -18,6 +18,7 @@ opt-level = 3
 
 [lib]
 proc-macro = true
+name = "gostd_dervie"
 
 [dependencies]
 syn = "1.0"
