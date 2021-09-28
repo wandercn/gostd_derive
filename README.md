@@ -1,4 +1,13 @@
-# [gostd_derive](https://github.com/wandercn/gostd_derive).
+# [gostd_derive](https://github.com/wandercn/gostd_derive)
+
+[![crates.io](https://img.shields.io/crates/v/gostd_derive.svg?color=yellow)](https://crates.io/crates/gostd_derive)
+[![Released API docs](https://docs.rs/gostd_derive/badge.svg)](https://docs.rs/gostd_derive)
+[![GPL3 licensed](https://img.shields.io/github/license/wandercn/gostd_derive.svg)](./LICENSE)
+[![Downloads of Crates.io](https://img.shields.io/crates/d/gostd_derive.svg)](https://crates.io/crates/gostd_derive)
+[![Lines of code](https://img.shields.io/tokei/lines/github/wandercn/gostd_derive.svg)](#)
+[![Build](https://img.shields.io/github/workflow/status/wandercn/gostd/Rust.svg)](#)
+[![Languages](https://img.shields.io/github/languages/top/wandercn/gostd_derive.svg)](#)
+
 proc_macro_derive library for [gostd](https://github.com/wandercn/gostd).
 
 
@@ -13,16 +22,18 @@ proc_macro_derive library for [gostd](https://github.com/wandercn/gostd).
 
 example:
 ```
+use gostd_derive::Fmt;
+
 #[derive(Fmt)]
 struct Foo{
- ...
+  name:String,
 }
 
 // 必须为附加Fmt继承宏的Struct 或者 Emun 实现String方法才能正常运行
 impl Foo {
 
     fn String()->String{
-        ...
+        "test".to_string()
     }
 }
 ```
@@ -43,6 +54,6 @@ impl fmt::Display for Foo {
 - 如何调试
 
 本库只使用官方的proc_macro没有办法调试。
-唯一方法，只有运行 `cargo check` 检查,没报错就问题。
+唯一方法，只有运行 `cargo check` 检查,不报错就没问题。
 
 

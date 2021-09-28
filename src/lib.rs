@@ -1,9 +1,9 @@
+//! proc_macro_derive library for [gostd](https://github.com/wandercn/gostd).
 #![allow(non_snake_case)]
 use proc_macro::TokenStream;
 use quote::quote;
 use syn;
 
-#[doc = "proc_macro_derive library for [gostd](https://github.com/wandercn/gostd)."]
 ///  Fmt implement the Stringer interface in Go using macro emulation.
 ///  Printf function in Go to automatically print the content returned by a custom implementation of String method.
 /// <details class="rustdoc-toggle top-doc">
